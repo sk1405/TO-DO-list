@@ -19,18 +19,18 @@ const itemsSchema={
 const Item= mongoose.model("Item", itemsSchema);
 
 const item1= new Item({
-  name:"welcome"
+  name:"Enter new items"
 });
 
 const item2= new Item({
-  name: "hi"
+  name: "Click on checkbox to delete"
 });
 
-const item3= new Item({
-  name: "byee"
-});
+// // const item3= new Item({
+//   name: "byee"
+// });
 
-const defaultItems=[item1, item2, item3];
+const defaultItems=[item1, item2];
 
 app.get("/", function(req, res){
 
